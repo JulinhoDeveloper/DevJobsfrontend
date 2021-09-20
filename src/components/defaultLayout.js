@@ -8,7 +8,7 @@ import {
   VideoCameraOutlined,
   UploadOutlined,
 } from '@ant-design/icons';
-
+import { Link } from 'react-router-dom';
 const { Header, Sider, Content } = Layout;
 
 class DefaultLayout extends React.Component {
@@ -32,15 +32,21 @@ class DefaultLayout extends React.Component {
         <div className="logo">
         {this.state.collapsed ? (<h1>DJ</h1>) : (<h1>DevJobs</h1>)}
           </div>
-          <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
-            <Menu.Item key="1" icon={<UserOutlined />}>
-              nav 1
+          <Menu theme="dark" mode="inline" defaultSelectedKeys={[window.location.pathname]}>
+            <Menu.Item key="/" icon={<UserOutlined />}>
+            <Link to='/'>Home</Link>
             </Menu.Item>
-            <Menu.Item key="2" icon={<VideoCameraOutlined />}>
-              nav 2
+            <Menu.Item key="/profile" icon={<VideoCameraOutlined />}>
+            <Link to='/profile'>Profile</Link>
             </Menu.Item>
-            <Menu.Item key="3" icon={<UploadOutlined />}>
-              nav 3
+            <Menu.Item key="/appliedjobs" icon={<UploadOutlined />}>
+            <Link to='/appliedjobs'>Applied Jobs</Link>
+            </Menu.Item>
+            <Menu.Item key="/appliedjobs" icon={<UploadOutlined />}>
+            <Link to='/appliedjobs'>Applied Jobs</Link>
+            </Menu.Item>
+            <Menu.Item key="/PostJob" icon={<UploadOutlined />}>
+            <Link to='/PostJob'>PostJob</Link>
             </Menu.Item>
           </Menu>
         </Sider>
