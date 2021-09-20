@@ -42,9 +42,6 @@ class DefaultLayout extends React.Component {
             <Menu.Item key="/appliedjobs" icon={<UploadOutlined />}>
             <Link to='/appliedjobs'>Applied Jobs</Link>
             </Menu.Item>
-            <Menu.Item key="/appliedjobs" icon={<UploadOutlined />}>
-            <Link to='/appliedjobs'>Applied Jobs</Link>
-            </Menu.Item>
             <Menu.Item key="/PostJob" icon={<UploadOutlined />}>
             <Link to='/PostJob'>PostJob</Link>
             </Menu.Item>
