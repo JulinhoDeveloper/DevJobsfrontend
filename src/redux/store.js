@@ -6,8 +6,6 @@ import thunk from "redux-thunk";
 import { jobsReducer } from "./reducers/jobsReducer";
 
 
-
-
 const rootReducer = combineReducers({
   jobsReducer: jobsReducer,
 });
