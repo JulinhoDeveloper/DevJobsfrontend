@@ -16,11 +16,9 @@ function App() {
         <Route path="/PostJob" exact component={PostJob} />
         <Route path="/Profile" exact component={Profile} />
         <Route path="/JobInfo" exact component={JobInfo} />
-
-        
       </BrowserRouter>
     </div>
   );
 }
-
+i
 export default App;
